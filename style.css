@@ -11,28 +11,72 @@ body, html {
 }
 #page1{
     height: 100vh;
-    width: 100vw;
-    background-color: #09423C;
+    width: 100%;
+    background-color: #FEFEFF;
 }
 #nav{
+    height: 4.5vw;
     display: grid;
-    grid-template-columns: 40% 10% 10% 10% 8% 20%;
-    padding: 40px 60px;
+    background-color: #272627;
+    grid-template-columns: 5% 27% 20% 7% 2% 8% 8% 8% 8% 4%;
+    /* padding: 4; */
     color: aliceblue;
 }
-#nav a{
+#nav a , #nav i{
+    align-self: center;
+    justify-self: center;
     text-decoration: none;
     color: white;
     font-weight: 500;
 }
-#nav a:nth-child(6){
-    color:#09423C;
-    
-    padding: 20px;
-    margin-top: -20px;
+#nav i:nth-child(1){
+    font-size: 2vw;
+}
+#nav i:nth-child(10){
+    font-size: 1.5vw;
+    /* justify-self: start; */
+}
+#nav a:nth-child(9){
+    /* border: 1px solid #D42BFE; */
+    padding: 0.4vw 1.5vw;
+    border-radius: 2vw;
+    background-color: #D42BFE;
+}
+#nav i:nth-child(4){
+    /* border: 1px solid #D42BFE; */
+    font-size: 1.2vw;
+    padding: 0.4vw ;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    /* background-color: #D42BFE; */
+}
+#nav input {
+    width: 25vw;
+    justify-self: start;
+    border: 1px solid white;
+    border-radius: 5vw;
     align-self: center;
-    justify-self: center;
-    background-color: #ECB971;
-    border-radius: 20px;
+    height: 2vw;
+    padding: 1vw;
+    color: white;
+    background-color: transparent;
+}
 
+
+#nav h2 {
+    align-self: center;
+    font-family: monument;
+    font-weight: 200;
+}
+#nav select{
+    align-self: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: fit-content;
+}
+
+#nav select option {
+    color: black;
+    background-color: transparent;
 }
