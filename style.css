@@ -75,6 +75,13 @@ body, html {
     color: white;
     height: fit-content;
 }
+#nav select:focus{
+    outline: 0px;
+    border: none;
+   
+}
+
+
 
 #nav select option {
     color: black;
