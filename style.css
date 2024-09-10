@@ -15,6 +15,12 @@
     src: url(./font/silkserif-lightitalic-webfont.ttf);
   }
   @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  @font-face {
+    font-family: 'monument';
+    src: url(https://gulshantomar.xyz/premier/monumentextended-regular-webfont.woff) format('woff');
+    src: url(https://gulshantomar.xyz/premier/monumentextended-regular-webfont.woff2) format('woff2');
+   }
+
 *{
     margin: 0;
     padding: 0;
@@ -171,6 +177,16 @@ body, html {
         top: 30%;
         left: 15%;
     }
+    & h5::after{
+        content: "";
+        display: block;
+        width: 27vw;
+        position: absolute;
+        height: 0.3vw;
+        top: 50%;left: 110%;
+        background-color: #ffffff;
+        /* margin: 1vw 0;   */
+    }
     & h1{
         font-size: 4.5vw;
         color: #fff;
@@ -238,7 +254,7 @@ body, html {
     }
   }
   #page2 {
-    height: 100vh;
+    height: 90vh;
   }
   #page2 h1 {
     font-size: 2.5vw;
@@ -290,3 +306,111 @@ body, html {
         font-weight: 500;
     }
   }
+#page3{
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+   
+    & h2{
+        text-align: center;
+       
+        font-size: 2.3vw;
+        color: #272627;
+        justify-self: center;
+        font-weight: 700;
+
+        & span{
+            color: #D42BFE;
+        }
+    }
+    & h2::before{
+        content: "";
+        display: block;
+        width: 13vw;
+        position: absolute;
+        height: 0.3vw;
+        top: 2%;
+        left: 12%;
+        background-color: #D42BFE;
+        /* margin: 1vw 0;   */
+    }
+    & h2::after{
+        content: "";
+        display: block;
+        width: 13vw;
+        position: absolute;
+        height: 0.3vw;
+        top: 2%;
+        right: 12%;
+        background-color: #D42BFE;
+        /* margin: 1vw 0;   */
+    }
+    
+}
+
+#cards {
+    display: flex;
+    /* background-color: #5c5b5b; */
+    height: min-content;
+    width: 100%;
+    padding: 1.5vw 26.5vw;
+    justify-content: space-between;
+}
+.card{
+    padding: 2vw;
+    height: 19vh;
+    width: 22vw;
+    padding-right: 1.7vw;
+    box-shadow: rgba(29, 29, 55, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 1vw;
+
+    & h4 {
+        font-size: 1.2vw;
+        color: #D42BFE;
+        font-weight: 700;
+        margin-bottom: 1vw;
+    }
+    & p {
+        font-size: 1.1vw;
+        color: #272627;
+        font-weight: 500;
+    }
+    & button{
+        box-shadow: rgba(29, 29, 55, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        background-color: white;
+        border: none;
+        padding: 0.5vw 1.5vw;
+        border-radius: 1vw;
+        font-size: 1.1vw;
+        color: #D42BFE;
+        font-weight: 600;
+        margin-left: 11vw;
+        margin-top: 0.5vw;
+        cursor: pointer;
+    }
+}
+#mildstone{
+    height: 40vh;
+    display: flex;
+    padding-left: 5vw;
+
+    padding-right:7vw;
+    justify-content: space-between;
+    /* background-color: #5c5b5b; */
+    margin: 3vw;
+    align-items: center;
+    border-left: #FC3200 0.5vw solid;
+    & h1{
+        font-size: 2.4vw;
+        padding-bottom: 1vw;
+        color: #FC3200;
+        font-weight: 800;
+        width: 30vw;
+    }
+    & p{
+        font-size: 1.5vw;
+        color: #272627;
+        font-weight: 500;
+        width: 30vw;
+    }
+}

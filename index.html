@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADVOCONN</title>
+      <!-- locomotivecss -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+       <!-- sherycss -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="style.css">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
@@ -13,7 +17,7 @@
 <body>
     <div id="main">
         <div id="page1">
-            <div id="nav">
+        <div id="nav">
                 <i class="ri-playstation-fill"></i>
                 <h2>ADVOCONN</h2>
                 <input type="text" placeholder="Search">
@@ -30,8 +34,8 @@
                 <a href="">Sign up</a>
                 <i class="ri-more-2-fill"></i>
                 
-            </div>
-            <div class="slider">
+        </div>
+        <div class="slider">
                 <i class="ri-arrow-left-wide-line"></i>
                 <i class="ri-arrow-right-wide-line"></i>
                <div id="slider1" class="overlay">
@@ -39,7 +43,7 @@
                 <h4><span>COURT</span> ke chakkar lagakar ?</h4>
                </div>
                <div id="slider2" class="overlay">
-                <h5>Join ---------------------------</h5>
+                <h5>Join</h5>
                 <h1>ADVOCONN</h1>
                 <h4><span>Hub</span> of Lawyers</h4>
                </div>
@@ -57,6 +61,7 @@
                 <span class="dot" onclick="changeSlide(2)"></span>
               </div>
         </div>  
+        </div>
         <div id="page2">
             <h1><span>Solve Any Case </span>With Our Aid !</h1>
             <div id="frame">
@@ -75,7 +80,48 @@
                 </div>
             </div>
         </div>  
+        <div id="page3">
+            <h2><span>For Your safe Legel</span> Journey Ahead: Join Us</h2>
+            <div id="cards">
+                <div class="card">
+                    <h4>Client</h4>
+                    <p>For all your legal hunch ,Sign-up Now</p>
+                    <button>Go Now</button>
+                </div>
+                <div class="card">
+                    <h4>Lawyer</h4>
+                    <p>Boost your carrer and build profile with us</p>
+                    <button>Go Now</button>
+                </div>
+            </div>
+            <div id="mildstone">
+                <div id="leftdiv">
+                    <h1>Mildstone Of Our Journey !</h1>
+                    <p>Our ambition of revolutionising the field of law for fulfing the needs of growing India has so far been loved by all these achievements wouldn’t have been possible without love and support of people.</p>
+                </div>
+                <img src="./won.jpg" alt="">
+            </div>
+        </div>
+
+        
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- threejs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <!-- sheryjs -->
+        <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> 
+
     <script src="script.js"></script>
 </body>
 </html>
