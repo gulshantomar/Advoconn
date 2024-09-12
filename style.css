@@ -15,11 +15,7 @@
     src: url(./font/silkserif-lightitalic-webfont.ttf);
   }
   @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-  @font-face {
-    font-family: 'monument';
-    src: url(https://gulshantomar.xyz/premier/monumentextended-regular-webfont.woff) format('woff');
-    src: url(https://gulshantomar.xyz/premier/monumentextended-regular-webfont.woff2) format('woff2');
-   }
+  
 
 *{
     margin: 0;
@@ -33,7 +29,7 @@ body, html {
 
 }
 #page1{
-    height: 100vh;
+    height: 88vh;
     width: 100%;
     background-color: #FEFEFF;
 }
@@ -112,10 +108,11 @@ body, html {
 }
 
 .slider{
-    height: 80vh;
+    height: 50vw;
     width: 100%;
     background-image:url(/sliderBg.jpg);
     background-position: center;
+    /* background-blend-mode: darken; */
     object-fit: cover;
     position: relative;
     display: flex;
@@ -254,7 +251,9 @@ body, html {
     }
   }
   #page2 {
-    height: 90vh;
+    height: fit-content;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   #page2 h1 {
     font-size: 2.5vw;
@@ -307,7 +306,7 @@ body, html {
     }
   }
 #page3{
-    height: 100vh;
+    height:fit-content;
     position: relative;
     justify-content: center;
    
@@ -358,7 +357,6 @@ body, html {
 }
 .card{
     padding: 2vw;
-    height: 19vh;
     width: 22vw;
     padding-right: 1.7vw;
     box-shadow: rgba(29, 29, 55, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -384,8 +382,8 @@ body, html {
         font-size: 1.1vw;
         color: #D42BFE;
         font-weight: 600;
-        margin-left: 11vw;
-        margin-top: 0.5vw;
+        margin-left: 60%;
+        margin-top: 10%;
         cursor: pointer;
     }
 }
@@ -413,4 +411,309 @@ body, html {
         font-weight: 500;
         width: 30vw;
     }
+    & img{
+        height: 50vh;
+    }
+}
+
+@media (max-width:600px) {
+    #page1{
+        height: 88vw;
+    }
+    #nav{
+        height: 6.5vh;
+        display: grid;
+        background-color: #272627;
+        grid-template-columns: 80% 20%;
+        padding: 4vw;
+    }
+    #nav a , #nav i{
+        display: none;
+    }
+    
+    #nav a:nth-child(9){
+        /* border: 1px solid #D42BFE; */
+        font-size: 3.5vw;
+        padding: 0.6vh 1.5vh;
+        border-radius: 2vw;
+        background-color: #D42BFE;
+        display: block;
+    }
+    #nav input {
+        display: none;
+    }
+    
+    
+    #nav select{
+        display: none;
+    }
+    .slider{
+        height: 40vh;
+        background-size: cover;
+        
+        & i:nth-child(1){
+            position: absolute;
+            color: #FEFEFF;
+            font-size: 3vh;
+            top: 45%;
+            left: 2%;
+        }
+        & i:nth-child(2){
+            position: absolute;
+            color: #FEFEFF;
+            font-size: 3vh;
+            top: 45%;
+            right: 2%;
+        }
+    }
+    #slider1{
+        & h1{
+            font-size: 4.5vh;
+            color: #FEFEFF;
+            position: absolute;
+            top: 42%;
+            left: 10%;
+            
+        }
+        & h4{
+            font-size: 2.9vh;
+            color: #FEFEFF;
+            position: absolute;
+            top: 55%;
+            left: 10%;
+        }
+    }
+    
+    #slider2{
+       
+        & h5{
+            font-size: 4vh;
+            color: #FEFEFF;
+            position: absolute;
+            top: 36%;
+            left: 15%;
+        }
+        & h5::after{
+            content: "";
+            display: block;
+            width: 27vw;
+            position: absolute;
+            height: 0.3vw;
+            top: 50%;
+            left: 110%;
+            background-color: #ffffff;
+            /* margin: 1vw 0;   */
+        }
+        & h1{
+            font-size: 4.5vh;
+            color: #fff;
+            position: absolute;
+            top: 47%;
+            left: 15%;
+            font-family: monument;
+            
+        }
+        
+        & h4{
+            font-size: 3vh;
+            color: #D42BFE;
+    
+            position: absolute;
+            top: 60%;
+            left: 15%;
+        }
+    }
+    #slider3{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        /* text-transform: capitalize; */
+        /* display: none; */
+        & ul {
+            font-size: 2vh;
+            color: #FEFEFF;
+            position: absolute;
+            top: 35%;
+            left: 17%;
+        }
+        & span {
+            color: #D42BFE;
+    
+        }
+    }
+    .navigation-button {
+        text-align: center;
+        position: relative;
+        top: 93%;
+        left: 45%;
+      }
+      
+    
+      .dot {
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #5c5b5b;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    
+      .active,
+      .dot:hover {
+        background-color: #ffffff;
+      }
+      
+      #page2 {
+        height: fit-content;
+        margin-top: 10%;
+        margin-bottom: 5%;
+      }
+      #page2 h1 {
+        font-size: 3vh;
+        color: #272627;
+        padding: 3vw 5vw;
+        font-weight: 700;
+        & span {
+            color: #D42BFE;
+        }
+      }
+      #frame{
+        display: block;
+        justify-content: space-evenly;
+        /* align-items: center; */
+        margin: 0 6vw;
+    
+      }
+    
+        #frame img{
+            width: 100%;
+            height: 50vh;  
+            /* object-fit: contain/; */
+            border-radius: 1vw;
+            /* margin: 0 2vw; */
+            object-fit: cover;
+            margin: 3vh 0;
+        }
+      #content {
+        height:fit-content;
+        margin: auto;
+        width: 100%;
+        padding: 0 3vw;
+        /* background-color: red; */
+        border-left: 0.3vw solid #D42BFE;
+    
+        & h3 {
+            font-size: 2.2vh;
+            height: 3vh;
+            color: #272627;
+            /* font-family: 'Inter'; */
+            text-transform: capitalize;
+            padding: 1vh 0;
+            font-weight: 700;
+        }
+    
+        & p {
+            font-size: 1.7vh;
+            width: 95%;
+            color: #272627;
+            padding: 1vh 0;
+            font-weight: 500;
+        }
+      }
+    #page3{
+        height:fit-content;
+        position: relative;
+        justify-content: center;
+       
+        & h2{
+            
+            width: 80%;
+            text-align: center;
+           margin: auto 10%;
+            font-size: 2.5vh;
+            color: #272627;
+            justify-self: center;
+            font-weight: 700;
+    
+            & span{
+                color: #D42BFE;
+            }
+        }
+        & h2::before{
+            display: none;
+        }
+        & h2::after{display: none;
+        }
+        
+    }
+    
+    #cards {
+        display: block;
+        height: 100%;
+        width: 90%;
+        padding: 0;
+    }
+    .card{
+        padding: 2vh;
+        width: 30vh;
+        
+        padding-right: 1.7vw;
+        box-shadow: rgba(29, 29, 55, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        border-radius: 1vw;
+    
+        & h4 {
+            font-size: 1.2vh;
+            color: #D42BFE;
+            font-weight: 700;
+            margin-bottom: 1vh;
+        }
+        & p {
+            font-size: 1.1vh;
+            color: #272627;
+            font-weight: 500;
+        }
+        & button{
+            box-shadow: rgba(29, 29, 55, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            background-color: white;
+            border: none;
+            padding: 0.5vw 1.5vw;
+            border-radius: 1vw;
+            font-size: 1.1vw;
+            color: #D42BFE;
+            font-weight: 600;
+            margin-left: 60%;
+            margin-top: 10%;
+            cursor: pointer;
+        }
+    }
+    #mildstone{
+        height: 40vh;
+        display: flex;
+        padding-left: 5vw;
+    
+        padding-right:7vw;
+        justify-content: space-between;
+        /* background-color: #5c5b5b; */
+        margin: 3vw;
+        align-items: center;
+        border-left: #FC3200 0.5vw solid;
+        & h1{
+            font-size: 2.4vw;
+            padding-bottom: 1vw;
+            color: #FC3200;
+            font-weight: 800;
+            width: 30vw;
+        }
+        & p{
+            font-size: 1.5vw;
+            color: #272627;
+            font-weight: 500;
+            width: 30vw;
+        }
+        & img{
+            height: 50vh;
+        }
+    }
+    
 }
